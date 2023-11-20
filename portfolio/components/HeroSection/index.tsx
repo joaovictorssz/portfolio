@@ -15,6 +15,8 @@ const HeroSection = () => {
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Hello, I'm {""}</span>
                     <br />
                     <TypeAnimation
+                    deletionSpeed={40}
+                    preRenderFirstString
                     sequence={[
                         // Same substring at the start will only be typed out once, initially
                         'J. Victor Picanço',
