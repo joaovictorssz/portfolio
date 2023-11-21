@@ -15,15 +15,15 @@ const Navbar = () => {
     const links : {title: string, href: string}[] = [
         {
             title: "About",
-            href: "#about"
+            href: "about"
         },
         {
             title: "Projects",
-            href: "#projects"
+            href: "projects"
         },
         {
             title: "Contact",
-            href: "#contact"
+            href: "contact"
         }
     ]
 
@@ -49,7 +49,7 @@ const Navbar = () => {
                 <div className="menu hidden md:block md:w-auto" id="navbar">
                     <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8">
                         {links.map((link, id)=>{
-                            return <li key={id}><Link href={link.href}>{link.title}</Link></li>
+                            return <li key={id}><NavLink href={link.href} title={link.title}/></li>
                         })}
                     </ul>
                 </div>

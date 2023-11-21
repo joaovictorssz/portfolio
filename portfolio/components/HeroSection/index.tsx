@@ -9,7 +9,7 @@ import {TypeAnimation} from 'react-type-animation'
 const HeroSection = () => {
     return(
         <section>
-            <div className="grid grid-cols-1 lg:grid-cols-12">
+            <div className="grid grid-cols-1 lg:grid-cols-12 h-screen">
                 <div className="col-span-8 place-self-center text-center sm:text-left">
                 <h1 className='text-white mb-4 sm:text-5xl text-4xl lg:text-6xl font-extrabold'>
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Hello, I'm {""}</span>
@@ -49,9 +49,7 @@ const HeroSection = () => {
                     </button>
                 </div>
                 </div>
-                <div className="col-span-4 ">
-                    <Image width={300} height={300} className="rounded-md border-1 border-[#353535] shadow-md" src={avatar} alt="avatar"/>
-                </div> 
+ 
             </div>
         </section>
     )
