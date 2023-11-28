@@ -17,7 +17,7 @@ const  AboutSection = () => {
         <div className='w-full text-[#121212]'>
             <ReactFlow>
             <Background color='#454545'/>
-            <div className='w-full h-screen flex items-center justify-center p-6 py-12'>
+            <div className='w-full h-screen flex items-center justify-center p-6 py-16'>
                 <section className='z-10 max-w-[800px] bg-[#1b1b1b] rounded p-6'>
                     <header className='flex items-center'>      
                         <Image src={profile} alt='profile'/>
@@ -34,7 +34,7 @@ const  AboutSection = () => {
                         <button onClick={()=>setSection("certifications")} className={`transition-all ${section === 'certifications' ? 'border-b border-purple-500 text-white' :  'text-[#565656]'}`}>Certifications</button>
                     </section>
 
-                    <main className='flex flex-col space-y-2 my-6 text-sm md:text-base text-[#a3a3a3]'>
+                    <main className='flex flex-col space-y-2 my-6 text-[10px] md:text-base text-[#a3a3a3]'>
                         {section === 'resume' && <Resume/>}
                         {section === 'education' && <Education/>}
                         {section === 'certifications' && <Certificates/>}

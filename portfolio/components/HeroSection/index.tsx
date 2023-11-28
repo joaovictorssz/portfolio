@@ -3,14 +3,14 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import Image from "next/image";
-import avatar from '@/public/avatar.png'
+import laptop from '@/public/laptop.svg'
 import {TypeAnimation} from 'react-type-animation'
 
 const HeroSection = () => {
     return(
         <section>
-            <div className="grid grid-cols-1 lg:grid-cols-12 h-screen">
-                <div className="col-span-8 place-self-center text-center sm:text-left">
+            <div className="grid grid-cols-1 lg:grid-cols-12 h-screen relative">
+                <div className="col-span-1 lg:col-span-8 place-self-center text-center sm:text-left">
                 <h1 className='text-white mb-4 sm:text-5xl text-4xl lg:text-6xl font-extrabold'>
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Hello, I'm {""}</span>
                     <br />

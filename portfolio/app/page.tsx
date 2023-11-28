@@ -1,7 +1,8 @@
 import AboutSection from '@/components/AboutSection'
 import HeroSection from '@/components/HeroSection'
 import Navbar from '@/components/Navbar'
-import Image from 'next/image'
+import Projects from '@/components/Projects'
+import Technologies from '@/components/Technologies'
 
 export default function Home() {
   return (
@@ -14,6 +15,14 @@ export default function Home() {
 
       <div id='about'>
         <AboutSection/>
+      </div>
+
+      <div id='projects'>
+        <Projects/>
+      </div>
+
+      <div id='technologies'>
+        <Technologies/>
       </div>
     </main>
   )

@@ -1,6 +1,6 @@
 const Resume = () => {
     return (
-        <div className="transition-all ease-in-out flex flex-col space-y-3">
+        <div className="transition-all ease-in-out flex flex-col space-y-3 break-words">
             <p>
                 I am a Full Stack developer with a specialization in Javascript, driven by a passion for crafting innovative and robust web applications. 
                 Embarking on my programming journey at the age of 16, I have continuously honed my skills to become adept at delivering cutting-edge solutions.
