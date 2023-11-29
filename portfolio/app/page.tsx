@@ -1,8 +1,8 @@
 import AboutSection from '@/components/AboutSection'
+import Experience from '@/components/Experience'
 import HeroSection from '@/components/HeroSection'
 import Navbar from '@/components/Navbar'
 import Projects from '@/components/Projects'
-import Technologies from '@/components/Technologies'
 
 export default function Home() {
   return (
@@ -16,14 +16,16 @@ export default function Home() {
       <div id='about'>
         <AboutSection/>
       </div>
+      
+      <div id='experience'>
+        <Experience/>
+      </div>
 
       <div id='projects'>
         <Projects/>
       </div>
 
-      <div id='technologies'>
-        <Technologies/>
-      </div>
+
     </main>
   )
 }
