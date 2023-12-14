@@ -6,20 +6,14 @@ import { FaEye, FaGithub } from "react-icons/fa6"
 
 const   ProjectItem = ({deploy_url, description, github_url, icons, picture, technologies, title}: ProjectListTypes) => {
     return (
-        <div className=" md:place-self-center flex flex-col px-3 max-w-sm rounded-lg h-[280px] min-h-[280px] my-6 max-h-[280px] overflow-hidden transition-all ease-in-out">
+        <div className=" md:place-self-center flex flex-col px-3 max-w-sm rounded-lg h-[280px] min-h-[280px] my-6 max-h-fit transition-all ease-in-out">
             <section className=" w-full min-h-[200px] relative">
                 {!picture && <DefaultPicture/>}
-                {picture && <Image src={picture} alt="project picture"/>}
+                {picture && <Image className="w-full h-full" src={picture} alt="project picture"/>}
 
                 <Link className="absolute top-2 left-2" href={github_url} target="_blank">    
                     <div className="p-2 rounded-full flex justify-center items-center bg-[#131313] text-white">
                         <FaGithub />
-                    </div>
-                </Link>
-
-                <Link className="absolute top-2 right-2" href={deploy_url} target="_blank">    
-                    <div className="p-2 rounded-full flex justify-center items-center bg-[#131313] text-white">
-                        <FaEye />
                     </div>
                 </Link>
 
@@ -30,7 +24,7 @@ const   ProjectItem = ({deploy_url, description, github_url, icons, picture, tec
                 </div>
             </section>
             <section className="bg-[#2c2c2c] px-4 py-2 flex">
-                <span className="max-h-full text-ellipsis">
+                <span className="max-h-fit text-ellipsis">
                     <h1 className="font-semibold">{title}</h1>
                     <p className="text-sm text-[#656565]">{description}</p>
                 </span>

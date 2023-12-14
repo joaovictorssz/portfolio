@@ -14,7 +14,7 @@ const  AboutSection = () => {
     const [section, setSection] = useState<string>('resume')
 
     return(
-        <div className='w-full text-[#121212]'>
+        <div className='w-full text-[#121212]' data-aos="fade-left">
             <ReactFlow>
             <Background color='#454545'/>
             <div className='w-full h-screen flex items-center justify-center p-6 py-16'>

@@ -8,7 +8,8 @@ const Projects = () => {
             <main className="w-full h-full flex flex-col items-center md:grid md:grid-cols-2 lg:grid-cols-3 p-12">
             {project_list.map((project, index)=>{
                 return (
-                <ProjectItem 
+                <div key={index} className="place-self-center" data-aos="fade-up" data-aos-delay={(index)*120}>
+                    <ProjectItem 
                     deploy_url={project.deploy_url}
                      description={project.description}
                      github_url={project.github_url}
@@ -16,8 +17,9 @@ const Projects = () => {
                      icons={project.icons}
                      technologies={project.technologies}
                      title={project.title}
-                     key={index}
-                     />)
+                     
+                     />
+                </div>)
             })}
             </main>
         </div>

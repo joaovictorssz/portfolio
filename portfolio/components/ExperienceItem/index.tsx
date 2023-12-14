@@ -10,7 +10,7 @@ const ExperienceItem = (
 }
 ) => {
     return(
-        <section className="flex flex-col md:flex-row justify-around bg-[#141414] p-6 hover:bg-[#1d1d1d] transition-colors rounded">
+        <section data-aos="fade-left" className="flex flex-col md:flex-row justify-around bg-[#141414] p-6 hover:bg-[#1d1d1d] transition-colors rounded">
 
             <span className="md:w-2/5 mb-3">
                 <p className="opacity-75 font-semibold">{init_date} - {end_date}</p>

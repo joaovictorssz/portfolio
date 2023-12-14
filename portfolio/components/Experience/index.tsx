@@ -14,17 +14,17 @@ const Experience = () => {
                 <h1 className="font-extrabold text-xl md:text-2xl lg:text-3xl">Experiences</h1>
 
                 <div className="flex lg:flex-row  lg:space-y-0 justify-between mt-6">
-                    <span className="flex flex-col items-center">
+                    <span data-aos="fade-up" data-aos-delay={100} className="flex flex-col items-center">
                         <p><span className="text-purple-500 text-3xl">+</span><strong className="text-3xl">5</strong> years</p>
                         <p className="text-sm">Studying</p>
                     </span>
 
-                    <span className="flex flex-col items-center">
+                    <span data-aos="fade-up" data-aos-delay={200} className="flex flex-col items-center">
                         <p className=""><span className="text-purple-500 text-3xl">+</span><strong className="text-3xl">3</strong> years</p>
                         <p className="text-sm">Working</p>
                     </span>
 
-                    <span className="flex flex-col items-center">
+                    <span data-aos="fade-up" data-aos-delay={300} className="flex flex-col items-center">
                         <p><span className="text-purple-500 text-3xl">+</span><strong className="text-3xl">60</strong>%</p>
                         <p className="text-sm">Positive impact</p>
                     </span>
